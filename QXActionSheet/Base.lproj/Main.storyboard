@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nQi-3Z-KbE">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--HelloWorld-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="A67-1g-GqM">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0i-y0-QGv">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="20" width="400" height="780"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Tev-bM-KHd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="A67-1g-GqM" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="3b3-Od-nz8"/>
+                            <constraint firstAttribute="trailing" secondItem="g0i-y0-QGv" secondAttribute="trailing" id="ARv-Pe-jod"/>
+                            <constraint firstItem="g0i-y0-QGv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="EVa-Fo-hOs"/>
+                            <constraint firstItem="A67-1g-GqM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Fga-Ha-ewm"/>
+                            <constraint firstAttribute="trailing" secondItem="A67-1g-GqM" secondAttribute="trailing" id="Gsh-U3-eLh"/>
+                            <constraint firstItem="g0i-y0-QGv" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Ncx-am-GqL"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="g0i-y0-QGv" secondAttribute="bottom" id="eSo-y7-wbg"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="A67-1g-GqM" secondAttribute="bottom" id="oMj-dj-Kwd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="A67-1g-GqM"/>
+                                <exclude reference="g0i-y0-QGv"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3b3-Od-nz8"/>
+                                <exclude reference="Fga-Ha-ewm"/>
+                                <exclude reference="Gsh-U3-eLh"/>
+                                <exclude reference="ARv-Pe-jod"/>
+                                <exclude reference="EVa-Fo-hOs"/>
+                                <exclude reference="Ncx-am-GqL"/>
+                                <exclude reference="eSo-y7-wbg"/>
+                                <exclude reference="oMj-dj-Kwd"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="A67-1g-GqM"/>
+                                <include reference="g0i-y0-QGv"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3b3-Od-nz8"/>
+                                <include reference="Fga-Ha-ewm"/>
+                                <include reference="Gsh-U3-eLh"/>
+                                <include reference="ARv-Pe-jod"/>
+                                <include reference="EVa-Fo-hOs"/>
+                                <include reference="Ncx-am-GqL"/>
+                                <include reference="eSo-y7-wbg"/>
+                                <include reference="oMj-dj-Kwd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="HelloWorld" id="3KH-fr-tpP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1197" y="336.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Px0-qv-XGQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nQi-3Z-KbE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xJX-4V-bfY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="kVv-92-3PT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMs-5Y-TwM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="279" y="336.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg.jpg" width="1242" height="2208"/>
+    </resources>
+</document>
