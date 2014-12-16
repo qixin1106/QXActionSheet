@@ -45,10 +45,10 @@
     self.as = [[QXActionSheet alloc] initWithHeight:420
                                     isNeedPerspective:YES];
     self.as.delegate = self;
-    [self.as.contentView addSubview:showView];
     [self.view addSubview:self.as];
 
-    
+    [self.as.contentView addSubview:showView];
+
     self.navigationController.navigationBarHidden = YES;
 }
 
@@ -64,6 +64,7 @@
 {
     NSLog(@"actionSheetDidClose");
     self.navigationController.navigationBarHidden = NO;
+    self.as = nil;
 }
 
 @end
